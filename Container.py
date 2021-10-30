@@ -1,18 +1,17 @@
+import settings
+
+
 class Container:
     _figures_count = 0
     _figures = []
 
-    def __init__(self, fin, fout):
-        self.fin = fin
-        self.fout = fout
-
     def read(self):
-        self._figures_count = int(self.fin.readline())
+        self._figures_count = int(settings.fin.readline())
         for i in range(self._figures_count):
-            next_line = self.fin.readline()
+            next_line = settings.fin.readline()
             figure_information = next_line.split()
             figure_type = figure_information[0]
-            self._figures.append(eval(figure_type)(self.fin, self.fout))
+            self._figures.append(eval(figure_type)(settings.fin, settings.fout))
             self._figures[-1].read()
 
     def print(self):
