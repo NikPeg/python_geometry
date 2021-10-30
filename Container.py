@@ -1,5 +1,4 @@
 class Container:
-    _MAXSIZE = 10000
     _figures_count = 0
     _figures = []
 
