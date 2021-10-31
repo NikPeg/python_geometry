@@ -3,10 +3,13 @@ import Color
 
 class Figure:
     color = Color.Color.RED
-    perimeter = 0
 
     def print(self):
         pass
+
+    @property
+    def perimeter(self):
+        return 0
 
     def __lt__(self, other):
         return self.perimeter < other.perimeter
