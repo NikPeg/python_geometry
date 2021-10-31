@@ -24,7 +24,7 @@ class Container:
         for i in range(self._figures_count):
             mx = -1
             mxj = 0
-            for j in range(self._figures_count):
+            for j in range(i, self._figures_count):
                 if self._figures[j].perimeter > mx:
                     mx = self._figures[j].perimeter
                     mxj = j
