@@ -9,8 +9,8 @@ class Rectangle(Figure.Figure):
     right_down = None
 
     def __init__(self, _left_up_x, _left_up_y, _right_down_x, _right_down_y, _color):
-        self.left_up = Point.Point(int(_left_up_x), int(_left_up_y))
-        self.right_down = Point.Point(int(_right_down_x), int(_right_down_y))
+        self.left_up = Point.Point(float(_left_up_x), float(_left_up_y))
+        self.right_down = Point.Point(float(_right_down_x), float(_right_down_y))
         self.color = eval(f"Color.Color.{_color}")
 
     @property

@@ -1,5 +1,7 @@
 import settings
 import Rectangle
+import Circle
+import Triangle
 
 
 class Container:
