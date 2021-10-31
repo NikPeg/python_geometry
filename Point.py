@@ -6,11 +6,7 @@ class Point:
     x = 0
     y = 0
 
-    def __init__(self):
-        pass
-
     def __init__(self, _x, _y):
-        self.__init__()
         self.x = _x
         self.y = _y
 

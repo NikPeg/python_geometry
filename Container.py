@@ -1,5 +1,8 @@
 import settings
+import Rectangle
 
+# Circle 1 1 3 RED
+# Triangle 1 1 2 2 3 3 GREEN
 
 class Container:
     _figures_count = 0
@@ -11,8 +14,7 @@ class Container:
             next_line = settings.fin.readline()
             figure_information = next_line.split()
             figure_type = figure_information[0]
-            self._figures.append(eval(figure_type)(settings.fin, settings.fout))
-            self._figures[-1].read()
+            self._figures.append(eval(f"{figure_type}.{figure_type}")(*figure_information[1:]))
 
     def print(self):
         for i in range(self._figures_count):
