@@ -1,8 +1,6 @@
 import settings
 import Rectangle
 
-# Circle 1 1 3 RED
-# Triangle 1 1 2 2 3 3 GREEN
 
 class Container:
     _figures_count = 0
