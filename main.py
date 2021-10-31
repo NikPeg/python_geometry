@@ -1,9 +1,10 @@
 import Container
 import settings
+import sys
 
 
-settings.fin = open("test1.txt", "r")
-settings.fout = open("out1.txt", "w")
+settings.fin = open(sys.argv[1], "r")
+settings.fout = open(sys.argv[2], "w")
 c = Container.Container()
 c.read()
 c.sort()
